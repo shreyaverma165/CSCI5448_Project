@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 9, 2017 2:54:02 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="industree.Model.Employee" table="Employee_tbl" lazy="false">
+         <id name="employeeId" type="int">
+            <column name="employeeId" />
+        </id>
+        <one-to-one name="user" class="industree.Model.User"
+			cascade="save-update"></one-to-one>
+        <property name="userId" type="java.lang.String">
+            <column name="userId" />
+        </property>
+        <property name="workContact" type="java.lang.String">
+            <column name="workContact" />
+        </property>
+        <property name="dateOfJoining" type="java.util.Date">
+            <column name="dateOfJoining" />
+        </property>
+        <property name="workemailAddress" type="java.lang.String" access="field">
+            <column name="workemailAddress" />
+        </property>
+        <property name="designation" type="java.lang.String">
+            <column name="designation" />
+        </property>
+        <property name="position" type="java.lang.String" access="field">
+            <column name="position" />
+        </property>
+        <property name="managerId" type="int">
+            <column name="managerId" />
+        </property>
+        <property name="department" access="java.lang.String">
+            <column name="department" />
+        </property>
+ 	</class>
+</hibernate-mapping>

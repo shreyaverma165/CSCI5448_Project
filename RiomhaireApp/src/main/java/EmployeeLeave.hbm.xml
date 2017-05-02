@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 17, 2017 5:40:01 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="industree.Model.EmployeeLeave" table="EmployeeLeave_tbl">
+        <id name="employeeLeaveId" type="java.lang.String">
+            <column name="employeeLeaveId" />
+            <generator class="assigned"/>
+        </id>
+        <property name="employeeStatusId" type="int">
+            <column name="employeeStatusId" />
+        </property>
+        <property name="startDate" type="java.util.Date">
+            <column name="startDate" />
+        </property>
+        <property name="endDate" type="java.util.Date">
+            <column name="endDate" />
+        </property>
+        <property name="appliedDate" type="java.util.Date">
+            <column name="appliedDate" />
+        </property>
+        <property name="approvedDate" type="java.util.Date">
+            <column name="approvedDate" />
+        </property>
+        <property name="leaveComment" type="java.lang.String">
+            <column name="leaveComment" />
+        </property>
+    </class>
+</hibernate-mapping>

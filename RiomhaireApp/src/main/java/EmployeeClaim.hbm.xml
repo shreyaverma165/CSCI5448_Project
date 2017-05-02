@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 17, 2017 2:14:02 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="industree.Model.EmployeeClaim" table="EmployeeClaim_tbl">
+        <id name="employeeClaimId" type="int">
+            <column name="employeeClaimId" />
+            <generator class="assigned" />
+        </id>
+        <property name="claimItemType" type="java.lang.String">
+            <column name="claimItemType" />
+        </property>
+        <property name="employeeId" type="java.lang.String">
+            <column name="employeeId" />
+        </property>
+        <property name="amount" type="int">
+            <column name="amount" />
+        </property>
+        <property name="purchaseDate" type="java.lang.String">
+            <column name="purchaseDate" />
+        </property>
+        <property name="appliedDate" type="java.lang.String">
+            <column name="appliedDate" />
+        </property>
+        <property name="approvedDate" type="java.lang.String">
+            <column name="approvedDate" />
+        </property>
+        <property name="claimStatusId" type="int">
+            <column name="claimStatusId" />
+        </property>
+        <property name="claimComment" type="java.lang.String">
+            <column name="claimComment" />
+        </property>
+   </class>
+</hibernate-mapping>

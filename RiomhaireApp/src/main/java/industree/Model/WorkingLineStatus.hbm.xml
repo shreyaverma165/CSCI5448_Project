@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 26, 2017 11:39:29 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="industree.Model.WorkingLineStatus" table="WorkingMachineLineStatus_tbl">
+        <id name="workingMachineLineId" type="int">
+            <column name="workingMachineLineId" />
+            <generator class="assigned" />
+        </id>
+        <property name="employeeId" type="java.lang.String">
+            <column name="employeeId" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="status" />
+        </property>
+        <property name="startPosition" type="int">
+            <column name="startPosition" />
+        </property>
+        <property name="endPosition" type="int">
+            <column name="endPosition" />
+        </property>
+        <property name="stock" type="int">
+            <column name="stock" />
+        </property>
+        <property name="machineType" type="java.lang.String">
+            <column name="machineType" />
+        </property>
+         <property name="lineId" type="int">
+            <column name="lineId" />
+        </property>
+    </class>
+</hibernate-mapping>
